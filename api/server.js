@@ -58,6 +58,8 @@ server.ext("onPreResponse", (request, reply) => {
     else {
 
 	    const reactString = ReactDOM.renderToString(<RoutingContext {...renderProps} />);
+			// const curServer = process.env.NODE_ENV === 'production' ? '/' : 'http://localhost:8080/';
+			const curServer = '/';
 
 			let output = (
 				`<!doctype html>
@@ -72,7 +74,7 @@ server.ext("onPreResponse", (request, reply) => {
 	 				<script>
 
 	 				</script>
-	 				<script src=/build.js></script>
+	 				<script src=${curServer}build.js></script>
 	 			</body>
 				</html>`
 	 		);

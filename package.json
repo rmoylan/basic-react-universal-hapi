@@ -9,7 +9,11 @@
     "build": "webpack --verbose --colors --display-error-details --config webpack.prod.config.js",
     "dev": "npm run start & npm run asset-watch"
   },
-  "keywords": ["react", "hapi", "universal"],
+  "keywords": [
+    "react",
+    "hapi",
+    "universal"
+  ],
   "author": "ryan moylan",
   "license": "ISC",
   "dependencies": {
@@ -29,8 +33,12 @@
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "babel-preset-react-hmre": "^1.0.1",
+    "hapi-webpack-plugin": "^1.3.0",
     "react-hot-loader": "^1.3.0",
     "webpack": "^1.12.11",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-middleware": "^1.4.0",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.6.0"
   }
 }

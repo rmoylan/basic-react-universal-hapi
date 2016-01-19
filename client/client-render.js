@@ -6,7 +6,6 @@ import { routes } from '../api/routes';
 
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 
-
 var rootInstance = ReactDOM.render(
   <Router routes={routes} history={createBrowserHistory()} />,
   document.getElementById('app')
